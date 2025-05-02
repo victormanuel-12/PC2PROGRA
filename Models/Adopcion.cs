@@ -14,10 +14,10 @@ namespace PC2proyecto.Models
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "La  mascota es obligatoria.")]
     public int PetId { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "El adoptante es obligatoria.")]
     public int AdopterId { get; set; }
 
     public DateTime FechaAdopcion { get; set; } = DateTime.UtcNow;
