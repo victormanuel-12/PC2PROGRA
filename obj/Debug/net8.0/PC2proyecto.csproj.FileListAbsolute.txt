@@ -15,7 +15,6 @@ C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\appsettings.json
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\PC2proyecto.staticwebassets.runtime.json
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\PC2proyecto.staticwebassets.endpoints.json
-C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\app.db
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\PC2proyecto.exe
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\PC2proyecto.deps.json
 C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\PC2proyecto.runtimeconfig.json
@@ -272,3 +271,6 @@ C:\Users\PC\Desktop\PC2\PC2PROGRA\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\PC\Desktop\PC2\PC2PROGRA\obj\Debug\net8.0\PC2proye.9F77230A.Up2Date
 C:\Users\PC\Desktop\PC2\PC2PROGRA\obj\Debug\net8.0\PC2proyecto.genruntimeconfig.cache
 C:\Users\PC\Desktop\PC2\PC2PROGRA\obj\Debug\net8.0\ref\PC2proyecto.dll
+C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\Npgsql.dll
+C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\PC\Desktop\PC2\PC2PROGRA\bin\Debug\net8.0\app.db

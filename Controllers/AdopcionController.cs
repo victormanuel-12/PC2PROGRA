@@ -78,6 +78,7 @@ namespace PC2PROGRA.Controllers
 
         mascota.EstadoAdopcion = "Adoptada";
         _context.Update(mascota);
+        adopcion.FechaAdopcion = DateTime.SpecifyKind(adopcion.FechaAdopcion, DateTimeKind.Utc);
 
         // Guardar la adopción
         _context.Add(adopcion);
