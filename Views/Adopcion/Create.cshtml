@@ -1,0 +1,83 @@
+@model PC2proyecto.Models.Adopcion
+
+@{
+    ViewData["Title"] = "Asignar Mascota a Adoptante";
+}
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h3 class="card-title">Asignar Mascota a Adoptante</h3>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null) {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["WarningMessage"] != null) {
+        <div class="alert alert-warning">@TempData["WarningMessage"]</div>
+    }
+    @if (TempData["ErrorMessage"] != null) {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    <div class="card-body">
+        <form asp-action="Create" class="needs-validation" novalidate>
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+            
+            <div class="mb-3">
+                <label asp-for="PetId" class="form-label">Mascota</label>
+                <select asp-for="PetId" class="form-select" required>
+                    <option value="">-- Seleccione una mascota --</option>
+                    @foreach (var pet in ViewBag.PetsList)
+                    {
+                        <option value="@pet.Id">@pet.DisplayName</option>
+                    }
+                </select>
+                <span asp-validation-for="PetId" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="AdopterId" class="form-label">Adoptante</label>
+                <select asp-for="AdopterId" class="form-select" required
+                        asp-items="@(ViewBag.Adopters as SelectList)">
+                    <option value="">-- Seleccione un adoptante --</option>
+                </select>
+                <span asp-validation-for="AdopterId" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="FechaAdopcion" class="form-label">Fecha de adopción</label>
+                <input asp-for="FechaAdopcion" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="FechaAdopcion" class="text-danger"></span>
+            </div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary me-md-2">
+                    <i class="fas fa-save"></i> Registrar Adopción
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        // Validación del lado del cliente mejorada
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}
