@@ -7135,11 +7135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\PC2\\PC2proyecto\\PC2proyecto.csproj",
+      "projectUniqueName": "c:\\Users\\PC\\Desktop\\PC2\\PC2PROGRA\\PC2proyecto.csproj",
       "projectName": "PC2proyecto",
-      "projectPath": "C:\\Users\\PC\\Desktop\\PC2\\PC2proyecto\\PC2proyecto.csproj",
+      "projectPath": "c:\\Users\\PC\\Desktop\\PC2\\PC2PROGRA\\PC2proyecto.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\PC2\\PC2proyecto\\obj\\",
+      "outputPath": "c:\\Users\\PC\\Desktop\\PC2\\PC2PROGRA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -20,6 +20,7 @@ namespace PC2proyecto.Models
     public string Nombre { get; set; }
 
     [Range(0, 50, ErrorMessage = "La edad debe estar entre 0 y 50 años.")]
+    [Required(ErrorMessage = "La edad de la mascota es obligatoria.")]
     public int Edad { get; set; }
 
     [Required(ErrorMessage = "El tipo de mascota es obligatorio.")]
